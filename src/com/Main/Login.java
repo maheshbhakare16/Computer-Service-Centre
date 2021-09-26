@@ -13,16 +13,12 @@ import java.awt.geom.RoundRectangle2D;
 import javax.swing.JPanel;
 import javax.swing.ImageIcon;
 import javax.swing.SwingConstants;
-import java.awt.Component;
 import java.awt.Cursor;
 
-import javax.swing.border.Border;
 import javax.swing.BorderFactory;
-import javax.swing.Box;
 import javax.swing.JTextField;
 import javax.swing.JPasswordField;
 import javax.swing.JButton;
-import javax.swing.JMenuItem;
 import javax.swing.JComboBox;
 
 public class Login {
@@ -96,7 +92,6 @@ public class Login {
 		
 		JLabel loginUserImage = new JLabel(new ImageIcon("/home/sai/eclipse-workspace/Computer-Service-Centre/img/login.png"));
 		loginUserImage.setBounds(0, 167, 556, 533);
-//		loginUserImage.setIcon(new ImageIcon(getClass().getResource("/home/sai/Computer-Service-Centre/img/Pic_Login1.svg")));
 		panel.add(loginUserImage);
 		
 		JLabel lblNewLabel_1_1 = new JLabel("Welcome");
@@ -165,7 +160,7 @@ public class Login {
 		frame.getContentPane().add(create_a_account);
 		
 		
-		JComboBox utypecombobox = new JComboBox();
+		JComboBox<String> utypecombobox = new JComboBox<String>();
 		utypecombobox.setBackground(new Color(255, 255, 255));
 		utypecombobox.setFont(new Font("Merriweather", Font.BOLD, 21));
 		utypecombobox.setBounds(717, 366, 320, 44);

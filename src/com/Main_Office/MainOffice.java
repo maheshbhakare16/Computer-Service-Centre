@@ -14,9 +14,6 @@ import java.awt.Cursor;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 import javax.swing.ImageIcon;
-import javax.swing.JSeparator;
-import java.awt.Dimension;
-import javax.swing.JTextField;
 
 public class MainOffice {
 
@@ -51,11 +48,7 @@ public class MainOffice {
 	private void initialize() {
 		frame = new JFrame("Admin Dashboard");
 		frame.getContentPane().setBackground(new Color(255, 255, 255));
-<<<<<<< HEAD
 		frame.setBounds(150, 200, 1386, 600);
-=======
-		frame.setBounds(150, 200, 1300, 900);
->>>>>>> bb4cd10faae88f15d620d81fb24e01a135c46e71
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setUndecorated(true);
 		frame.setShape(new RoundRectangle2D.Double(0,0,frame.getWidth(),frame.getHeight(),50,50));
@@ -63,11 +56,7 @@ public class MainOffice {
 		frame.getContentPane().setLayout(null);
 		
 		JPanel panel_2 = new JPanel();
-<<<<<<< HEAD
 		panel_2.setBounds(0, 0, 1386, 127);
-=======
-		panel_2.setBounds(0, 0, 1300, 205);
->>>>>>> bb4cd10faae88f15d620d81fb24e01a135c46e71
 		frame.getContentPane().add(panel_2);
 		panel_2.setBackground(new Color(100, 149, 237));
 		panel_2.setLayout(null);
@@ -76,11 +65,7 @@ public class MainOffice {
 		lblSaiInfotech.setHorizontalAlignment(SwingConstants.CENTER);
 		lblSaiInfotech.setForeground(new Color(255, 255, 255));
 		lblSaiInfotech.setFont(new Font("Ubuntu", Font.BOLD, 60));
-<<<<<<< HEAD
 		lblSaiInfotech.setBounds(12, 12, 1259, 91);
-=======
-		lblSaiInfotech.setBounds(12, 12, 1259, 159);
->>>>>>> bb4cd10faae88f15d620d81fb24e01a135c46e71
 		panel_2.add(lblSaiInfotech);
 		
 		JLabel lblX = new JLabel("X");
@@ -93,19 +78,11 @@ public class MainOffice {
 		});
 		lblX.setFont(new Font("Dialog", Font.BOLD, 31));
 		lblX.setForeground(new Color(255, 255, 255));
-<<<<<<< HEAD
 		lblX.setBounds(1343, 12, 31, 33);
 		panel_2.add(lblX);
 		
 		JPanel panel = new JPanel();
 		panel.setBounds(24, 139, 310, 383);
-=======
-		lblX.setBounds(1257, 12, 31, 33);
-		panel_2.add(lblX);
-		
-		JPanel panel = new JPanel();
-		panel.setBounds(71, 305, 310, 410);
->>>>>>> bb4cd10faae88f15d620d81fb24e01a135c46e71
 		panel.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		frame.getContentPane().add(panel);
 		panel.setLayout(null);
@@ -125,23 +102,20 @@ public class MainOffice {
 			public void mouseExited(MouseEvent e) {
 				customer.setForeground(Color.BLACK);
 			}
+			@Override
+			public void mouseClicked(MouseEvent e) {
+//				com.Main_Office.Customer c = new com.Main_Office.Customer();
+//				c.main(null);
+			}
 		});
 		customer.setForeground(new Color(0, 0, 0));
 		customer.setHorizontalAlignment(SwingConstants.CENTER);
 		customer.setFont(new Font("Ubuntu", Font.BOLD, 38));
-<<<<<<< HEAD
 		customer.setBounds(0, 306, 310, 79);
 		panel.add(customer);
 		
 		JPanel panel_1 = new JPanel();
 		panel_1.setBounds(362, 139, 310, 383);
-=======
-		customer.setBounds(0, 306, 310, 104);
-		panel.add(customer);
-		
-		JPanel panel_1 = new JPanel();
-		panel_1.setBounds(493, 305, 310, 410);
->>>>>>> bb4cd10faae88f15d620d81fb24e01a135c46e71
 		panel_1.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		frame.getContentPane().add(panel_1);
 		panel_1.setLayout(null);
@@ -165,19 +139,11 @@ public class MainOffice {
 		dealer.setHorizontalAlignment(SwingConstants.CENTER);
 		dealer.setForeground(Color.BLACK);
 		dealer.setFont(new Font("Ubuntu", Font.BOLD, 38));
-<<<<<<< HEAD
 		dealer.setBounds(0, 306, 310, 68);
 		panel_1.add(dealer);
 		
 		JPanel panel_1_1 = new JPanel();
 		panel_1_1.setBounds(699, 139, 310, 383);
-=======
-		dealer.setBounds(0, 306, 310, 104);
-		panel_1.add(dealer);
-		
-		JPanel panel_1_1 = new JPanel();
-		panel_1_1.setBounds(914, 305, 310, 410);
->>>>>>> bb4cd10faae88f15d620d81fb24e01a135c46e71
 		panel_1_1.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		frame.getContentPane().add(panel_1_1);
 		panel_1_1.setLayout(null);
@@ -201,12 +167,12 @@ public class MainOffice {
 		engineer.setHorizontalAlignment(SwingConstants.CENTER);
 		engineer.setForeground(Color.BLACK);
 		engineer.setFont(new Font("Ubuntu", Font.BOLD, 38));
-<<<<<<< HEAD
 		engineer.setBounds(0, 306, 310, 77);
 		panel_1_1.add(engineer);
 		
 		JPanel panel_1_1_1 = new JPanel();
 		panel_1_1_1.setLayout(null);
+		panel_1_1_1.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		panel_1_1_1.setBounds(1038, 139, 310, 383);
 		frame.getContentPane().add(panel_1_1_1);
 		
@@ -233,9 +199,5 @@ public class MainOffice {
 		lblNewLabel_1_1_1.setIcon(new ImageIcon("/home/sai/eclipse-workspace/Computer-Service-Centre/img/componant.jpg"));
 		lblNewLabel_1_1_1.setBounds(0, 0, 310, 310);
 		panel_1_1_1.add(lblNewLabel_1_1_1);
-=======
-		engineer.setBounds(0, 306, 310, 104);
-		panel_1_1.add(engineer);
->>>>>>> bb4cd10faae88f15d620d81fb24e01a135c46e71
 	}
 }
